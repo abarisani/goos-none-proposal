@@ -16,6 +16,8 @@ This package is only used for documentation purposes, applications need to defin
 
 ## Index
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/abarisani/goos-none-proposal/doc.svg)](https://pkg.go.dev/github.com/abarisani/goos-none-proposal/doc)
+
 - [Variables](<#variables>)
 - [func GetRandomData\(b \[\]byte\)](<#GetRandomData>)
 - [func Hwinit0\(\)](<#Hwinit0>)
