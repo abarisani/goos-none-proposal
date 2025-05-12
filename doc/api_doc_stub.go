@@ -32,8 +32,11 @@
 // [applet]: https://github.com/usbarmory/GoTEE/tree/master/applet
 package doc
 
-// cpuinit handles pre-runtime CPU initialization, it must be defined using
-// Go's Assembler.
+// cpuinit handles pre-runtime CPU initialization.
+//
+// It must be defined using Go's Assembler to retain Go's commitment to
+// backward compatibility, otherwise extreme care must be taken as the lack of
+// World start does not allow memory allocation.
 //
 // For an example see package [arm CPU initialization].
 //
@@ -42,6 +45,10 @@ func cpuinit()
 
 // Hwinit0, which must be linked as [runtime.hwinit0]¹, takes care of the lower
 // level initialization triggered before runtime setup (pre World start).
+//
+// It must be defined using Go's Assembler to retain Go's commitment to
+// backward compatibility, otherwise extreme care must be taken as the lack of
+// World start does not allow memory allocation.
 //
 // For an example see package [amd64 initialization].
 //
@@ -66,6 +73,10 @@ func Hwinit1()
 
 // Printk, which must be linked as [runtime.printk]¹, handles character printing
 // to standard output.
+//
+// It must be defined using Go's Assembler to retain Go's commitment to
+// backward compatibility, otherwise extreme care must be taken as the lack of
+// World start does not allow memory allocation.
 //
 // For an example see package [usbarmory console handling].
 //
@@ -102,6 +113,10 @@ func GetRandomData(b []byte)
 
 // Nanotime, which must be linked as [runtime.nanotime1]¹, returns the system
 // time in nanoseconds.
+//
+// It must be defined using Go's Assembler to retain Go's commitment to
+// backward compatibility, otherwise extreme care must be taken as the lack of
+// World start does not allow memory allocation.
 //
 // For an example see package [fu540 initialization].
 //
