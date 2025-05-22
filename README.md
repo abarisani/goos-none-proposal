@@ -47,7 +47,7 @@ var Exit func(int32)
 
 <a name="Idle"></a>Idle describes the optional set of [runtime.Idle](<https://pkg.go.dev/runtime/#Idle>) to define a CPU idle function.
 
-For an example see package [amd64](<https://github.com/usbarmory/tamago/blob/master/amd64/amd64.go>).
+For a basic example see package [amd64](<https://github.com/usbarmory/tamago/blob/master/amd64/amd64.go>), a more advanced example involving a physical countdown timer such as \[arm.CPU.SetAlarm\] is implemented in the [tamago example](<https://github.com/usbarmory/tamago-example/blob/master/network/imx.go>).
 
 ```go
 var Idle func(until int64)
@@ -98,7 +98,7 @@ var SocketFunc func(ctx context.Context, net string, family, sotype int, laddr, 
 ```
 
 <a name="GetRandomData"></a>
-## func GetRandomData
+## func [GetRandomData](<https://github.com/abarisani/goos-none-proposal/blob/main/doc/api_doc_stub.go#L112>)
 
 ```go
 func GetRandomData(b []byte)
@@ -113,7 +113,7 @@ For an example see package [amd64 random number generation](<https://github.com/
 ```
 
 <a name="Hwinit0"></a>
-## func Hwinit0
+## func [Hwinit0](<https://github.com/abarisani/goos-none-proposal/blob/main/doc/api_doc_stub.go#L60>)
 
 ```go
 func Hwinit0()
@@ -130,7 +130,7 @@ For an example see package [amd64 initialization](<https://github.com/usbarmory/
 ```
 
 <a name="Hwinit1"></a>
-## func Hwinit1
+## func [Hwinit1](<https://github.com/abarisani/goos-none-proposal/blob/main/doc/api_doc_stub.go#L72>)
 
 ```go
 func Hwinit1()
@@ -145,7 +145,7 @@ For an example see package [microvm platform initialization](<https://github.com
 ```
 
 <a name="InitRNG"></a>
-## func InitRNG
+## func [InitRNG](<https://github.com/abarisani/goos-none-proposal/blob/main/doc/api_doc_stub.go#L100>)
 
 ```go
 func InitRNG()
@@ -160,7 +160,7 @@ For an example see package [amd64 randon number generation](<https://github.com/
 ```
 
 <a name="Nanotime"></a>
-## func Nanotime
+## func [Nanotime](<https://github.com/abarisani/goos-none-proposal/blob/main/doc/api_doc_stub.go#L128>)
 
 ```go
 func Nanotime() int64
@@ -177,7 +177,7 @@ For an example see package [fu540 initialization](<https://github.com/usbarmory/
 ```
 
 <a name="Printk"></a>
-## func Printk
+## func [Printk](<https://github.com/abarisani/goos-none-proposal/blob/main/doc/api_doc_stub.go#L88>)
 
 ```go
 func Printk(c byte)
