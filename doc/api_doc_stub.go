@@ -186,9 +186,12 @@ var Exit func(int32)
 // Idle describes the optional set of [runtime.Idle] to define a CPU
 // idle function.
 //
-// For an example see package [amd64].
+// For a basic example see package [amd64], a more advanced example involving a
+// physical countdown timer such as [arm.CPU.SetAlarm] is implemented in
+// [tamago-example].
 //
 // [amd64]: https://github.com/usbarmory/tamago/blob/master/amd64/amd64.go
+// [tamago-example]: https:/github.com/usbarmory/tamago-example/blob/master/networking/imx.go
 var Idle func(until int64)
 
 // SocketFunc describes the optional override of [net.SocketFunc] to
