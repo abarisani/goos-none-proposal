@@ -187,11 +187,10 @@ var Exit func(int32)
 // idle function.
 //
 // For a basic example see package [amd64], a more advanced example involving a
-// physical countdown timer such as [arm.CPU.SetAlarm] is implemented in
-// [tamago-example].
+// physical countdown timer such as [arm.CPU.SetAlarm] is implemented in the [tamago example].
 //
 // [amd64]: https://github.com/usbarmory/tamago/blob/master/amd64/amd64.go
-// [tamago-example]: https:/github.com/usbarmory/tamago-example/blob/master/networking/imx.go
+// [tamago example]: https://github.com/usbarmory/tamago-example/blob/master/network/imx.go
 var Idle func(until int64)
 
 // SocketFunc describes the optional override of [net.SocketFunc] to
